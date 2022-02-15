@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIT Homework Week 1 - Alan Pruitt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
+  </head>
+  <body>
+    <h2>Week One H/W Responsive Three Column Layout</h2>
+    <!--<p>Resizing the browser window will result in the responsive effect (the columns stacking on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>-->
+    
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Our Founder</h2>
+        <p>Jane Doe, Founder and CEO, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="ceo-unsplash.jpg" alt="ceo unsplash" width="500" height="333">
+      </div>
+      <div class="column" style="background-color:#cac;">
+        <h2>Our Story</h2>
+        <p>Founded in 1776, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Our Values</h3>
+            <ul>
+                <li>Trust</li>
+                <li>Integrity</li>
+                <li>Passionate</li>
+            </ul> 
+      </div>
+      <div class="column" style="background-color:#aba;">
+        <h2>Contact Us</h2>
+        <p>Insert email form here</p>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="fname" name="fname" value="Jane.Doe@gmail.com"><br>
+            <input type="submit" value="Submit">
+          </form> 
+      </div>
+    </div>
+
+  </body>
+  <script src="index.js"></script>
+</html>
